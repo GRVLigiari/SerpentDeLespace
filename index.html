@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Snake</title>
+    
+</head>
+<body>
+    <audio id="eatSound" src="eatSound.ogg"></audio>
+    <div id="yourScore">Your Score</div>
+    <div id="scoreText">0</div>
+    <input id = 'reset' type="button" value="RESET SNAKE" onClick ="window.location.reload()">
+        <div id = 'gameBoard' width='600' height='600'>
+        <canvas id= 'mirror' width='600' height='600'  style="position: absolute; left: 100; top: 100; z-index: 1;"></canvas>></canvas>
+        <canvas id= 'game' width='600' height='600'  style="position: absolute; left: 100; top: 100; z-index: 1;"></canvas>></canvas> -->
+        </div>
+
+
+</body>
+<script src = '/js/classes/snake.js'></script>
+<script src = '/js/classes/food.js'></script>
+<script src = '/js/classes/block.js'></script>
+<script src = '/js/game.js'></script>
+<script src = '/js/classes/mirror.js'></script>
+
+
+</html>
